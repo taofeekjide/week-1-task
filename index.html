@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Todo List App</title>
   </head>
   <body>
-    <div>
-      <h1>Todo List</h1>
-      <input type="text" class="js-todo-input" placeholder="Add a task" />
-      <input type="date" class="js-todo-date" />
-      <input type="time" class="js-todo-time" />
+    <div class="todo-list">
+      <div class="todo-header">
+        <img src="todo-logo.png" alt="" srcset="">
+        <h1>Todo List</h1>
+      </div>
 
-      <button class="js-add-button">Add</button>
+      <div class="todo-input-grid">
+        <input type="text" class="js-todo-input todo-input" placeholder="Add a task" />
+        <input type="date" class="js-todo-date todo-date" />
+        <input type="time" class="js-todo-time todo-time" />
 
-      <div class="js-todo-display"></div>
+        <button class="js-add-button add-button">Add</button>
+      </div>
+
+      <div class="js-todo-display todo-display"></div>
 
       <script src="index.js"></script>
     </div>
